@@ -4,16 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vintage Vibe Gazette</title>
+
+    <!-- google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Italianno&family=MonteCarlo&family=UnifrakturMaguntia&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="dateTime">
+            <p id="current-date"></p>
+            <p class="establish">EST.1992</p>
+            <p class="volume"> Vol. XCII · No. 147</p>
+        </div>
+        <div class="line"></div>
+        <div class="line"></div>
+    
+        <p class="site-tagline">
+            Stories, thoughts, and ideas in classic style
+        </p>
+        <p class="small-tagline">
+            " A Girl Who Codes & Loves Newspaper"
+        </p>
+        <p class="bio">
+            <span>❢</span>
+            Personal Reflections by Ananya Ghosh
+            <span>❢</span>
+        </p>
+    </header>
 
-    <a href="">
-    <div class="blogCard" data-id="uuid">
+<!-- MAIN CONTENT -->
+ <main class="blog-list">
 
-    </div>
+    <!-- Blog Card 1 -->
+    <article class="blog-card">
+      <h2 class="blog-title">The Rise of Vintage Web Design</h2>
+      <p class="blog-meta">January 12, 2026 · Design</p>
+      <p class="blog-description">
+        Why old-school layouts, serif fonts, and newspaper aesthetics are making a strong comeback on the modern web.
+      </p>
+      <a class="read-more" href="blog.html">Read more →</a>
+    </article>
+
+    <!-- Blog Card 2 -->
+    <article class="blog-card">
+      <h2 class="blog-title">Why Simplicity Beats Flashy UI</h2>
+      <p class="blog-meta">January 5, 2026 · UX</p>
+      <p class="blog-description">
+        A deep look into why clean layouts and readable typography matter more than animations and effects.
+      </p>
+      <a class="read-more" href="blog.html">Read more →</a>
+    </article>
 
 
-    <script src="./Js/Index.js"></script>
+ </main>
+
+ <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2026 Vintage Vibe Gazette</p>
+  </footer>
+    <script src="./Js/index.js"></script>
 </body>
 </html>
