@@ -11,9 +11,14 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Italianno&family=MonteCarlo&family=Playwrite+NZ+Basic+Guides&family=UnifrakturMaguntia&display=swap" rel="stylesheet"></head>
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"/>
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Italianno&family=MonteCarlo&family=Playwrite+NZ+Basic+Guides&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
 <body>
     <!-- HEADER -->
     <header class="site-header">
@@ -42,34 +47,91 @@
     </header>
 
 <!-- MAIN CONTENT -->
- <main class="blog-list">
+<!-- MAIN CONTENT -->
+<main class="content-wrapper">
 
-    <!-- Blog Card 1 -->
-    <article class="blog-card">
-      <h2 class="blog-title">The Rise of Vintage Web Design</h2>
-      <p class="blog-meta">January 12, 2026 · Design</p>
-      <p class="blog-description">
-        Why old-school layouts, serif fonts, and newspaper aesthetics are making a strong comeback on the modern web.
-      </p>
-      <a class="read-more" href="blog.html">Read more →</a>
+    <!-- LATEST DISPATCH SECTION -->
+<section class="latest-dispatch">
+    <h2 class="section-heading">Latest Dispatch</h2>
+    <article class="featured-article">
+        <span class="blog-tag">♠ REFLECTIONS</span>
+        <h2 class="featured-title">The Art of Slow Coding in a Fast-Paced World</h2>
+        <p class="blog-date">February 4th, 2026</p>
+        <p class="featured-description">
+            In an era of rapid deployment and constant updates, there's something revolutionary about taking your time. 
+            This is a meditation on the beauty of crafting code with care, writing with intention, and building digital 
+            experiences that stand the test of time. Just as newspapers were once set letter by letter, perhaps our 
+            best work comes when we resist the urge to rush.
+        </p>
+        <div class="dotted-line"></div>
+        <a class="read-more" href="blog.html">Read the full story →</a>
     </article>
+</section>
 
-    <!-- Blog Card 2 -->
-    <article class="blog-card">
-      <h2 class="blog-title">Why Simplicity Beats Flashy UI</h2>
-      <p class="blog-meta">January 5, 2026 · UX</p>
-      <p class="blog-description">
-        A deep look into why clean layouts and readable typography matter more than animations and effects.
-      </p>
-      <a class="read-more" href="blog.html">Read more →</a>
-    </article>
+    <!-- FROM THE ARCHIVES SECTION -->
+<section class="archives-section">
+    <h2 class="section-heading">From the Archives</h2>
+    
+    <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card">
+            <span class="blog-tag">♠ DESIGN</span>
+            <h2 class="blog-title">The Rise of Vintage Web Design</h2>
+            <p class="blog-date">January 12th, 2026</p>
+            <p class="blog-description">
+                Why old-school layouts, serif fonts, and newspaper aesthetics are making a strong comeback on the modern web. A journey through time and pixels.
+            </p>
+            <div class="dotted-line"></div>
+            <a class="read-more" href="blog.html">See page 2</a>
+        </article>
 
+        <!-- Blog Card 2 -->
+        <article class="blog-card">
+            <span class="blog-tag">♣ UX</span>
+            <h2 class="blog-title">Why Simplicity Beats Flashy UI</h2>
+            <p class="blog-date">January 5th, 2026</p>
+            <p class="blog-description">
+                A deep look into why clean layouts and readable typography matter more than animations and effects. Less is often more in digital design.
+            </p>
+            <div class="dotted-line"></div>
+            <a class="read-more" href="blog.html">See page 3</a>
+        </article>
 
- </main>
+        <!-- Blog Card 3 -->
+        <article class="blog-card">
+            <span class="blog-tag">♦ TYPOGRAPHY</span>
+            <h2 class="blog-title">Typography Lessons from 1920s Newspapers</h2>
+            <p class="blog-date">December 28th, 2025</p>
+            <p class="blog-description">
+                What modern web designers can learn from the golden age of print journalism and classic type setting. History repeats itself in beautiful ways.
+            </p>
+            <div class="dotted-line"></div>
+            <a class="read-more" href="blog.html">See page 4</a>
+        </article>
 
- <!-- ===== FOOTER ===== -->
+        <!-- Blog Card 4 -->
+        <article class="blog-card">
+            <span class="blog-tag">♥ CODE</span>
+            <h2 class="blog-title">Building Without Frameworks</h2>
+            <p class="blog-date">December 15th, 2025</p>
+            <p class="blog-description">
+                Sometimes the best way forward is to go back to basics: vanilla HTML, CSS, and JavaScript. The beauty of simplicity in modern development.
+            </p>
+            <div class="dotted-line"></div>
+            <a class="read-more" href="blog.html">See page 5</a>
+        </article>
+    </div>
+</section>
+
+</main>
+ <!--===== FOOTER =====-->
   <footer class="site-footer">
-    <p>© 2026 Vintage Vibe Gazette</p>
+    <div class="icons">
+    <a href="https://github.com/ananya21-G"><i class="fi fi-brands-github"></i></a>
+    <a href="https://www.linkedin.com/in/ananya-ghosh-13aa6627b/"><i class="fi fi-brands-linkedin"></i></a>
+    <a href="mailto:ananyaghosh.2106@gmail.com"><i class="fi fi-rr-envelope"></i></a>
+    </div>
+    <p>© 2026 Ananya Ghosh - Built With Passion</p>
   </footer>
     <script src="./Js/index.js"></script>
 </body>
