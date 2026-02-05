@@ -455,3 +455,27 @@ body {
   color: #777;
   margin-top: 1rem;
 }
+
+/* ===== CLICKABLE CARD LINK ===== */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover .featured-article,
+.card-link:hover .blog-card {
+  background-color: #faf8f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Update read-more to not be a link anymore */
+.read-more {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #000;
+  font-style: italic;
+  display: inline-block;
+}

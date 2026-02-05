@@ -3,71 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Title | Vintage Vibe Gazette</title>
+    <title>The Art of Slow Coding - Vintage Vibe Gazette</title>
+    <link rel="stylesheet" href="./CSS/blog.css">
 
+    <!-- google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"/>
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
 
-    <!-- CSS for blog page -->
-    <link rel="stylesheet" href="./CSS/blog.css"> 
-    </head>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Italianno&family=MonteCarlo&family=Playwrite+NZ+Basic+Guides&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
 <body>
-
     <!-- HEADER -->
-     <header class="site-header">
-        <h1 class="site-title">Vintage Vibe Gazette</h1>
-
-        <nav class="site-nav">
-            <a href="index.html">HOME</a>
-            <a href="#">ARCHIVE</a>
-            <a href="#">ABOUT</a>
-        </nav>
-     </header>
-
-     <!-- MAIN BLOG CONTENT -->
-     <main class="blog-container">
-        <!-- BLOG HEADING -->
-         <article class="blog-article">
-            <!-- BLOG HEADING -->
-             <h2 class="blog-title">The Rise of Vintage Web Design</h2>
-             <!-- BLOG META INFO -->
-              <p class="blog-meta">
-                January 12, 2026 · By Ananya · Design
-              </p>
-              <!-- Blog Content -->
-      <section class="blog-content">
-        <p>
-          Vintage web design is making a powerful comeback. From serif typography
-          to newspaper-inspired layouts, designers are rediscovering the beauty
-          of simplicity and readability.
+    <header class="site-header">
+        <div class="dateTime">
+            <p id="current-date"></p>
+            <p class="establish">EST.1992</p>
+            <p class="volume"> Vol. XCII · No. 147</p>
+        </div>
+        <div class="line"></div>
+        <div class="line"></div>
+    
+        <p class="site-tagline">
+            Stories, thoughts, and ideas in classic style
+        </p>
+        <p class="small-tagline">
+            " A Girl Who Codes & Loves Newspaper"
+        </p>
+        <p class="bio">
+            <span>❢</span>
+            Personal Reflections by Ananya Ghosh
+            <span>❢</span>
         </p>
 
-        <p>
-          Unlike modern flashy interfaces, vintage layouts focus on content first.
-          The user is invited to read, not distracted by excessive animations or
-          visual noise.
-        </p>
+        <div class="line"></div>
+        <div class="line"></div>
+    </header>
 
-        <p>
-          This approach improves accessibility, creates emotional connection,
-          and gives websites a timeless personality that modern minimalism often
-          lacks.
-        </p>
+    <!-- BACK LINK -->
+<!-- BACK LINK -->
+<div class="back-navigation">
+    <a href="index.html" class="back-link">← Home</a>
+</div>
 
-        <blockquote>
-            “Good design is as little design as possible.” — Dieter Rams
-        </blockquote>
+    <!-- MAIN ARTICLE CONTENT -->
+<main class="article-wrapper">
+    <article class="full-article">
+        <!-- Dynamic: Title, Tag, Date -->
+        <div class="article-meta">
+            <span class="article-tag">♠ {{TAG_FROM_DB}}</span>
+            <p class="article-date">{{DATE_FROM_DB}}</p>
+        </div>
 
-        <p>
-            As developers and designers, returning to these fundamentals helps us
-          create experiences that feel intentional, calm, and meaningful.
-        </p>
-        </section>
-         </article>
-     </main>
-    <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <p>© 2026 Vintage Vibe Gazette</p>
-  </footer>
+        <h1 class="article-title">{{TITLE_FROM_DB}}</h1>
 
-<script src="./Js/blog.js"></script>
+        <div class="article-byline">
+            <p class="byline">By <span class="author-name">Ananya Ghosh</span></p>
+            <p class="reading-time">· 8 minute read ·</p>
+        </div>
+
+        <div class="ornamental-divider">
+            <span class="divider-line"></span>
+            <span class="divider-ornament">❦</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- Dynamic: Content from DB goes here -->
+        <div class="article-body">
+          <p>In the modern world of software development, speed is everything. We deploy continuously, iterate rapidly, and measure success in sprints.</p>
+
+<p>This revelation didn't come during a hackathon or a product launch. It came on a quiet Tuesday evening, as I sat refactoring a piece of code I'd written weeks earlier.</p>
+
+<h2>The Tyranny of Speed</h2>
+
+<p>We live in an age where productivity is measured in velocity points and success is quantified by lines of code per day.</p>
+
+<blockquote>The faster we move, the less we see. The more we build, the less we understand what we've built.</blockquote>
+
+<p>I've watched technical debt accumulate like sediment in a river...</p>
+        </div>
+
+        <div class="ornamental-divider">
+            <span class="divider-line"></span>
+            <span class="divider-ornament">✤</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <h3 class="bio-heading">About the Author</h3>
+            <p class="bio-text">
+                <strong>Ananya Ghosh</strong> is a developer and writer who believes in the intersection of 
+                technology and craft. When not coding, she collects vintage typewriters and dreams of opening 
+                a combination bookstore-café-coworking space. She writes from Kolkata, West Bengal.
+            </p>
+        </div>
+    </article>
+</main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">    
+        <div class="footer-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✤</span>
+            <span class="divider-line"></span>
+        </div>
+        
+        <p class="footer-quote">"Every word written is a small rebellion against forgetting."</p>
+        <p class="footer-credits">THE DAILY MUSINGS · PUBLISHED IRREGULARLY SINCE 1992</p>
+        
+        <div class="icons">
+            <a href="https://github.com/ananya21-G"><i class="fi fi-brands-github"></i></a>
+            <a href="https://www.linkedin.com/in/ananya-ghosh-13aa6627b/"><i class="fi fi-brands-linkedin"></i></a>
+            <a href="mailto:ananyaghosh.2106@gmail.com"><i class="fi fi-rr-envelope"></i></a>
+        </div>
+        
+        <p class="copyright">© 2026 Ananya Ghosh - Built With Passion</p>
+    </footer>
+
+    <script src="./Js/index.js"></script>
 </body>
 </html>
