@@ -24,7 +24,7 @@ function renderBlogs(blogs) {
 
   // --- Render featured (latest) blog ---
   const latest = blogs[0];
-  featured.parentElement.href = `/blog?id=${latest.id}`;
+  featured.parentElement.href = `/blog.html?id=${latest.id}`;
   featured.querySelector(".featured-title").textContent = latest.title;
   featured.querySelector(".featured-description").textContent = latest.description;
   featured.querySelector(".blog-date").textContent = formatDate(latest.createdAt);
