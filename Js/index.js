@@ -34,7 +34,7 @@ function renderBlogs(blogs) {
   grid.innerHTML = "";
   blogs.slice(1).forEach(blog => {
     const card = document.createElement("a");
-    card.href = `/blog?id=${blog.id}`;
+    card.href = `/blog.html?id=${blog.id}`;
     card.className = "card-link";
     card.innerHTML = `
       <article class="blog-card">
