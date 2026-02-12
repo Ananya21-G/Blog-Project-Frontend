@@ -17,6 +17,8 @@ async function getData() {
 
 function renderBlogs(blogs) {
   if (!blogs || blogs.length === 0) return;
+  // Sort newest first
+  blogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
   const grid = document.querySelector(".blog-grid");
   const featured = document.querySelector(".featured-article");
 
