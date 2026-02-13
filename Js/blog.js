@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const blogId = params.get("id");
 
 async function getData() {
-  const url = `http://localhost:8080/blog/${blogId}`;
+  const url = `https://blog-backend-sc5m.onrender.com/blog/${blogId}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {

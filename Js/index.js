@@ -1,7 +1,7 @@
 
 // fetch function
 async function getData() {
-  const url = "http://localhost:8080/blog";
+  const url = "https://blog-backend-sc5m.onrender.com/blog";
   try {
     const response = await fetch(url);
     if (!response.ok) {
