@@ -198,6 +198,7 @@ body {
   column-count: 2;
   column-gap: 3rem;
   column-rule: 1px solid #ddd;
+  column-fill: balance; /* add this */
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
